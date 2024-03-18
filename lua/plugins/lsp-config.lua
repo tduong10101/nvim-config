@@ -19,6 +19,13 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
       local util = require "lspconfig/util"
+      --lspconfig.powershell_es.setup({
+      --   cmd = {'pwsh', '-NoLogo', '-NoProfile', '-Command', '~/.local/share/nvim/mason/packages/powershell-editor-services/PowerShellEditorServices/Start-EditorServices.ps1'}
+			--})
+      --
+      lspconfig.html.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
