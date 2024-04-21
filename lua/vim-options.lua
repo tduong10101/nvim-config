@@ -8,4 +8,5 @@ vim.cmd("set number")
 vim.g.mapleader = " "
 vim.keymap.set({'n','v'}, "<C-y>", '"+y')
 vim.keymap.set({'n','v'}, "<C-p>", '"+p')
-
+vim.keymap.set({'n','v'}, "<leader>v", ':vnew<CR>')
+vim.keymap.set({'n','v'}, "<leader>h", ':new<CR>')
