@@ -12,7 +12,9 @@ return {
         null_ls.builtins.formatting.gofumpt,
         null_ls.builtins.formatting.golines,
         null_ls.builtins.formatting.goimports_reviser,
-        null_ls.builtins.formatting.prettierd
+        null_ls.builtins.formatting.prettierd,
+        null_ls.builtins.formatting.biome,
+        null_ls.builtins.formatting.terraform_fmt,
       },
     })
     vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})

@@ -33,6 +33,12 @@ return {
 			lspconfig.pylsp.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.biome.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.terraformls.setup({
+        capabilities = capabilities,
+      })
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 				cmd = { "gopls" },
@@ -58,4 +64,9 @@ return {
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
 	},
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"},
+    opts = {},
+  },
 }
