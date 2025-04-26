@@ -9,11 +9,11 @@ return {
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
         null_ls.builtins.diagnostics.pylint,
+        null_ls.builtins.diagnostics.eslint,
         null_ls.builtins.formatting.gofumpt,
         null_ls.builtins.formatting.golines,
         null_ls.builtins.formatting.goimports_reviser,
-        null_ls.builtins.formatting.prettierd,
-        null_ls.builtins.formatting.biome,
+        null_ls.builtins.formatting.prettier,
         null_ls.builtins.formatting.terraform_fmt,
       },
     })
